@@ -3,7 +3,7 @@ const url = "https://jsonplaceholder.typicode.com/posts/1";
 //your JS code here. If required.
 async function fetchDataAndDisplay(callback) {
 	try{
-		const response = await fetch(apiUrl);
+		const response = await fetch(url);
 		const data = await response.json();
 		callback(data.title);
 	}
